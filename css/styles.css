@@ -1,206 +1,514 @@
+/*Universal CSS*/
 * {
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(75, 75, 75);
+  font-family: "Noto Sans Vai", sans-serif, Georgia;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  opacity: 15%;
+  margin-top: 20px;
+}
+
+/*Navigation Bar CSS*/
+nav {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-
-body {
-  padding: 5%;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  padding-left: 0;
-}
-
-.nav li, h2 {
-  list-style: none;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 15px;
-  font-size: 18px;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-#top {
-  text-transform: uppercase;
-}
-
-.top {
-  margin: 16px 0;
-}
-
-a {
+nav a {
   text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: 16px;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: orange;
-}
-
-.profile-picture {
-  padding-top: 50px;
-}
-
-.title {
-  font-size: 30px;
-}
-
-.bio, .contact-container p, .contact-container p a {
-  color: rgb(115, 115, 115);
-}
-
-.portfolio-container {
-  padding-top: 10%;
-}
-
-#portfolio {
-  padding: 40px;
-}
-
-.project {
-  padding-bottom: 25px;
-}
-
-.contact-info {
-  font-weight: 700;
-}
-
-footer {
+/*Hero CSS*/
+.hero {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 700;
-  border-top: solid rgb(115, 115, 115) 1px;
-  margin-top: 100px;
+  flex-direction: column-reverse;
+}
+.hero p {
+  text-align: center;
+  margin: 0 auto 25px auto;
+  width: 300px;
+}
+.hero img {
+  width: 300px;
+  margin: 50px auto 25px auto;
 }
 
-.nav-footer {
+/*Container CSS*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container h3 {
+  text-transform: uppercase;
+  color: rgb(40, 40, 40);
+}
+.container p {
+  text-align: center;
+  margin: 0 auto 25px auto;
+  width: 300px;
+}
+.container img {
+  width: 350px;
+  margin: 50px auto 25px auto;
+}
+
+/*Contact Container CSS*/
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container-contact h3 {
+  font-size: 16px;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container-contact a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(93, 92, 92);
+}
+.container-contact p {
+  margin: 0 auto 25px auto;
+  width: 300px;
+}
+.footer {
   display: none;
 }
+.footer-mobile {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 15px 15px 15px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+.footer-nav {
+  text-transform: uppercase;
+}
 
-@media screen and (min-width: 768px) {
-  .nav {
-    width: 330px;
-    display: flex;
-    margin: auto;
+/*MEDIA SCREEN 320px*/
+@media screen and (min-width: 320px) {
+  /*Hero CSS*/
+  .hero img {
+    width: 250px;
   }
-
-  .section-1 {
-    flex-direction: row-reverse;
-    margin-top: 50px;
-  }
-
-  .profile-picture {
-    padding-top: 0;
-    width: 45%;
-    height: 100%;
-    float: right;
-  }
-
-  .bio {
-    width: 50%;
-    padding-right: 25px;
-    text-align: left;
-    font-size: 1.75em;
-  }
-
-  .project {
-    float: left;
-    width: 45%;
-    margin: auto;
-  }
-
-  .project:nth-child(even) {
-    margin-right: 7%;
-  }
-
-  .project img {
-    max-width: 108%;
-  }
-
-  .portfolio-text {
-    padding: 0 25px;
-  }
-
-  .contact-container {
-    max-width: 75%;
-    margin: auto;
-  }
-
-  .contact-text {
-    margin-bottom: 50px;
-  }
-
-  .top {
-    display: none;
-  }
-
-  .nav-footer {
-    display: flex;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(75, 75, 75);
-    text-align: center;
-  }
-
-  .nav-footer li {
-    list-style: none;
-    padding-left: 20px;
+  /*Container CSS*/
+  .container img {
+    width: 300px;
+    margin: 50px auto 25px auto;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    padding-bottom: 0;
+/*MEDIA SCREEN 768px*/
+@media screen and (min-width: 768px) {
+  /*Navigation Bar CSS*/
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-self: center;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  li {
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
   }
 
-  header {
+  /*Hero CSS*/
+  .hero {
     display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  .hero p {
+    text-align: start;
+    margin: auto;
+    width: 350px;
+    justify-content: center;
+  }
+  .hero img {
+    width: 250px;
+  }
+  /*Container CSS*/
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #portfolio {
+    position: absolute;
+    float: left;
+    margin: auto;
+  }
+  .container h3 {
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+  }
+  .container p {
+    text-align: center;
+    margin: 0 auto 25px auto;
+    width: 300px;
+  }
+  .container img {
+    margin: 50px auto 25px auto;
+    padding: 5px;
+  }
+
+  /*Contact Container CSS*/
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-contact h3 {
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .container-contact a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(93, 92, 92);
+  }
+  .container-contact p {
+    margin: 0 auto 25px auto;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  /*Footer Container CSS*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  .footer ul {
+    margin: auto 20px auto 5px;
+  }
+  .footer li {
+    font-size: 15px;
+  }
+  .footer h1 {
+    width: 200px;
+    font-size: 15px;
+    margin: auto 5px auto -20px;
+  }
+  /*Mobile footer is disabled for media query purposes*/
+  .footer-mobile {
+    display: none;
+  }
+  footer a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+  }
+  .footer-nav {
+    text-transform: uppercase;
+  }
+}
+
+/*MEDIA SCREEN 1024px*/
+@media screen and (min-width: 1024px) {
+  /*Navigation Bar CSS*/
+  nav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
-
-  .nav {
-    margin: initial;
-    align-items: center;
+  nav h1 {
+    width: 200px;
+    margin-left: 50px;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 50px;
   }
 
-  .bio {
-    font-size: 1.75em;
+  /*Hero CSS*/
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero p {
+    text-align: start;
+    margin: auto;
+    width: 400px;
+    justify-content: center;
+    font-size: 20px;
   }
 
-  .portfolio-container {
-    margin-bottom: 100px;
-    display: inline-block;
+  .hero img {
+    width: 350px;
+    margin: 50px auto 25px auto;
   }
 
-  .project:nth-child(even) {
-    margin-right: initial;
+  /*Container CSS*/
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #portfolio {
+    position: absolute;
+    float: left;
+    margin: auto;
+  }
+  .container h3 {
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+  }
+  .container p {
+    text-align: center;
+    margin: 0 auto 25px auto;
+    width: 300px;
+  }
+  .container img {
+    margin: 50px auto 25px auto;
+    padding: 10px;
   }
 
-  .project.number-1,
-  .project.number-2,
-  .project.number-4,
-  .project.number-5 {
-    margin-right: 5%;
+  /*Contact Container CSS*/
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-contact h3 {
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .container-contact a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(93, 92, 92);
+  }
+  .container-contact p {
+    margin: 0 auto 25px auto;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  /*Footer Container CSS*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  .footer ul {
+    margin: auto 20px auto 5px;
+  }
+  .footer li {
+    font-size: 15px;
+  }
+  .footer h1 {
+    width: 200px;
+    font-size: 15px;
+    margin: auto 5px auto -20px;
+  }
+  /*Mobile footer is disabled for media query purposes*/
+  .footer-mobile {
+    display: none;
+  }
+  footer a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+  }
+  .footer-nav {
+    text-transform: uppercase;
+  }
+}
+
+/*MEDIA SCREEN 3840px - 4k screens*/
+@media (min-width: 3840px) {
+  /*Navigation Bar CSS*/
+  nav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 200px;
+  }
+  nav h1 {
+    width: 200px;
+    margin-left: 50px;
+    font-size: 48px;
+    width: 600px;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    font-size: 38px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 50px;
   }
 
-  .project {
-    width: 30%;
+  /*Hero CSS*/
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero p {
+    text-align: start;
+    margin: auto;
+    width: 650px;
+    justify-content: center;
+    font-size: 28px;
   }
 
-  .project img {
-    max-width: 100%;
+  .hero img {
+    width: 600px;
+    margin: 50px auto 25px auto;
   }
 
-  .contact-container {
-    max-width: 50%;
-    margin-top: 5%;
+  /*Container CSS*/
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  #portfolio {
+    position: absolute;
+    float: left;
+    margin: auto;
+  }
+  .container h3 {
+    text-transform: uppercase;
+    color: rgb(40, 40, 40);
+    font-size: 30px;
+  }
+  .container p {
+    text-align: center;
+    margin: 0 auto 25px auto;
+    font-size: 20px;
+    width: 300px;
+  }
+  .container img {
+    margin: 50px auto 25px auto;
+    padding: 10px;
+    width: 950px;
+  }
+
+  /*Contact Container CSS*/
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-contact h3 {
+    font-size: 25px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .container-contact a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(93, 92, 92);
+    font-size: 16px;
+  }
+  .container-contact p {
+    margin: 0 auto 25px auto;
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  /*Footer Container CSS*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    gap: 600px;
+  }
+  .footer ul {
+    margin: auto 20px auto 5px;
+  }
+  .footer li {
+    font-size: 15px;
+  }
+  .footer h1 {
+    width: 200px;
+    font-size: 25px;
+    margin: auto 5px auto -20px;
   }
 }

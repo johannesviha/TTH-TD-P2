@@ -1,95 +1,115 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>TeamTreeHouse Project 2</title>
-  <meta name="description" content="TeamTreeHouseProject2" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-
-    <h1 id="top" class="title">Johannes Vihavainen</h1>
-    <ul class="nav">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-
-  <div>
-
-    <img class="profile-picture" src="images/responsive-layout-profile.png" alt="portfolio picture">
-
-    <p class="bio">
-      Hey I'm trying to become a web developer by practicing on TreeHouse and learning the ways of programming!</p>
-  </div>
-
-  <div class="portfolio-container">
-    <h2 id="portfolio">Portfolio</h2>
-
-    <div class="project number-1">
-      <img src="images/portfolio-1.png" alt="portfolio picture 1">
-      <h3>Marketing Page</h3>
-      <p class="portfolio-text">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Vai&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Responsive Website</title>
+  </head>
+  <body>
+    <nav class="top">
+      <h1>Student Name</h1>
+      <ul>
+        <li id="home"><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <p>
+        Hi! I'm a front-end developer who loves responsive design and css. I
+        recently finished learning front-end web development at Treehouse and am
+        excited to put all my skills to use!
+      </p>
+      <img
+        src="images/responsive-layout-profile.png"
+        alt="image of developer"
+      />
     </div>
-
-    <div class="project number-2">
-      <img src="images/portfolio-2.png" alt="portfolio picture 2">
-      <h3>Search Page</h3>
-      <p class="portfolio-text">This project searches through a specific database to find information that the user is trying to look up.</p>
+    <div class="container">
+      <h3 id="portfolio">Portfolio</h3>
+      <div class="card">
+        <img src="images/portfolio-1.png" alt="image of marketing page" />
+        <h3>Marketing Page</h3>
+        <p>
+          This project shows the front page of a marketing website meant for a
+          specific business I'm interested in.
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-2.png" alt="image of search page" />
+        <h3>Search Page</h3>
+        <p>
+          This project searches through a specific database to find information
+          that the user is trying to look up.
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-3.png" alt="image of travel app" />
+        <h3>Travel App</h3>
+        <p>
+          This project compares travel times based on different transportation
+          methods and tells you the best one.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="images/portfolio-4.png"
+          alt="image of map of favorite spots"
+        />
+        <h3>Map of Favorite Spots</h3>
+        <p>
+          This project uses mapping apis to plot points for my favorite spots in
+          the city for a do-it-yourself walking tour.
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-5.png" alt="image of photo gallery" />
+        <h3>Photo Gallery</h3>
+        <p>
+          This project shows pictures from a recenet trip to the viewer and
+          allows them to easily navigate through photos.
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-6.png" alt="image of calculator" />
+        <h3>Calculator</h3>
+        <p>
+          Someone can enter in the numbers they want, and press the big blue
+          button and get the result.
+        </p>
+      </div>
     </div>
-
-    <div class="project number-3">
-      <img src="images/portfolio-3.png" alt="portfolio picture 3">
-      <h3>Travel App</h3>
-      <p class="portfolio-text">This project compares travel times based on different transportation methods and tells you the best one.</p>
+    <div class="container-contact">
+      <h3 id="contact">Contact</h3>
+      <p>
+        If you're interested in chatting or want more information about what
+        I've been working on, I'd love to hear from you!
+      </p>
+      <p>Phone <a href="tel:111-555-1234">+1 (111) 555-1234</a></p>
+      <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
     </div>
-
-    <div class="project number-4">
-      <img src="images/portfolio-4.png" alt="portfolio picture 4">
-      <h3>Map of Favorite Spots</h3>
-      <p class="portfolio-text">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-    </div>
-
-    <div class="project number-5">
-      <img src="images/portfolio-5.png" alt="portfolio picture 5">
-      <h3>Photo Gallery</h3>
-      <p class="portfolio-text">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-    </div>
-
-    <div class="project number-6">
-      <img src="images/portfolio-6.png" alt="portfolio picture 6">
-      <h3>Calculator</h3>
-      <p class="portfolio-text">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-    </div>
-  </div>
-
-  <div class="contact-container" id="contact">
-    <h2>Contact</h2>
-    <p class="contact-text">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone <a href="#" class="contact-info">+1 (111)555-1234</a></p>
-    <p>Email <a href="#" class="contact-info">joeviha@icloud.com</a></p>
-  </div>
-
-  <footer>
-    <p class="name">Johannes Vihavainen</p>
-    <a class="top" href="#top">
-      BACK TO TOP
-    </a>
-    <ul class="nav-footer">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </footer>
-</body>
-
-
+    <hr />
+    <footer>
+      <nav class="footer-mobile">
+        <h4>Student Name</h4>
+        <h4 class="footer-nav"><a href="#top">Back to top</a></h4>
+      </nav>
+      <nav class="footer">
+        <h1>Student Name</h1>
+        <ul>
+          <li id="bottom-home"><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
